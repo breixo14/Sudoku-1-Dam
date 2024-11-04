@@ -2,7 +2,10 @@
 
 
 def numerosEnRango(sudoku):
-
+    
+    assert isinstance(
+        sudoku, list), "la interfaz exige que sudoku debe ser una lista"
+    
     if sudoku==[]:
         return False
 
@@ -18,6 +21,8 @@ def numerosEnRango(sudoku):
 
 def checkCuadrado(sudoku):
     
+    assert isinstance(
+        sudoku, list), "la interfaz exige que sudoku debe ser una lista"
     
     largo=len(sudoku)
     ancho=len(min(sudoku))
@@ -27,10 +32,10 @@ def checkCuadrado(sudoku):
     return False
 
 
-
-
-
 def checkFilas(sudoku):
+    
+    assert isinstance(
+        sudoku, list), "la interfaz exige que sudoku debe ser una lista"
     
     lista=list(range(1, len(sudoku)+1)) 
     for i in sudoku:
@@ -42,7 +47,6 @@ def checkFilas(sudoku):
 
 
 def checkColumnas(sudoku):
-
     
     assert isinstance(
         sudoku, list), "la interfaz exige que sudoku debe ser una lista"
