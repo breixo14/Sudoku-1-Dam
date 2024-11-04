@@ -3,7 +3,8 @@
 
 def numerosEnRango(sudoku):
 
-
+    if sudoku==[]:
+        return False
 
     for fila in sudoku:
         for i in fila:
